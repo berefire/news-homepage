@@ -1,0 +1,15 @@
+@layer base {
+    html,
+    body {
+        min-block-size: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @supports (min-block-size: 100dvh) {
+        html,
+        body {
+            min-block-size: 100dvh;
+        }
+    }
+}
