@@ -1,0 +1,6 @@
+@layer tokens.semantics {
+    :root {
+        --gap-cluster-sm: var(--spacing-400);
+        --gap-grid-xl: var(--spacing-800);
+    }
+}

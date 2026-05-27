@@ -1,1 +1,3 @@
-@import "@base/index.css" layer(base);
+@import "@base/font.css";
+@import "@base/reset.css";
+@import "@base/global.css";

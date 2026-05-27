@@ -1,0 +1,10 @@
+@layer components{
+    .header {
+        inline-size: 100%;
+    }
+
+    .logo-news {
+        inline-size: var(--sizing-icon-inline);
+        block-size: var(--sizing-icon-block);
+    }
+}

@@ -1,0 +1,7 @@
+@layer layout {
+    .grid--xl {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--gap-grid-xl);
+    }
+}

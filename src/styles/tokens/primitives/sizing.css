@@ -1,0 +1,6 @@
+@layer tokens.primitives {
+    :root {
+        --sizing-28: calc( 28 / var(--base) * 1rem );
+        --sizing-45: calc( 45 / var(--base) * 1rem );
+    }
+}

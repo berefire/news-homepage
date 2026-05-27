@@ -1,0 +1,21 @@
+@layer layout {
+    .box {
+        padding-block-start: calc( 28 / var(--base) * 1rem );
+        padding-block-end: calc( 80 / var(--base) * 1rem );
+        padding-inline: calc( 16 / var(--base) * 1rem );
+    }
+
+    @media (min-width: 48em){
+        .box {
+            padding-inline: calc( 80 / var(--base) * 1rem );
+        }
+    }
+
+    @media (min-width: 64em){
+        .box {
+            padding-block-start: calc( 89 / var(--base) * 1rem );
+            padding-block-end: calc( 126 / var(--base) * 1rem );
+            padding-inline: calc( 164 / var(--base) * 1rem );
+        }
+    }
+}

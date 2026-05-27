@@ -1,0 +1,6 @@
+@layer tokens.semantics {
+    :root {
+        --sizing-icon-inline: var(--sizing-45);
+        --sizing-icon-block: var(--sizing-28);
+    }
+}
