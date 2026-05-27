@@ -11,4 +11,10 @@
         flex-direction:column;
         gap: var(--gap-cluster-sm);
     }
+
+    .cluster--md {
+        display: flex;
+        flex-direction:column;
+        gap: var(--gap-cluster-md);
+    }
 }
