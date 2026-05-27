@@ -4,5 +4,11 @@
         --gap-cluster-md: var(--spacing-300);
         --gap-grid-xl: var(--spacing-800);
         --gap-grid-md: var(--spacing-300);
+
+        --padding-inline-button: var(--spacing-400);
+        --padding-block-button: var(--spacing-100);
+
+        --padding-inline-new-section: var(--spacing-300);
+        --padding-block-new-section: var(--spacing-200);
     }
 }

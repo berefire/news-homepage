@@ -1,0 +1,18 @@
+@layer tokens.semantics {
+    :root {
+        --font-family-base: var(--inter-family);
+
+        --fs-hero-title: var(--fs-2);
+        --lh-hero-title: var(--lh-2);
+        --fw-hero-title: var(--fw-extrabold);
+
+        --fs-hero-body: var(--fs-6);
+        --lh-hero-body: var(--lh-5);
+        --fw-hero-body: var(--fw-regular);
+
+        --fs-button: var(--fs-7);
+        --lh-button: var(--lh-4);
+        --fw-button: var(--fw-bold);
+        --ls-button: var(--letter-spacing-7);
+    }
+}

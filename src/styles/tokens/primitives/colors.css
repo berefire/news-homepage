@@ -1,0 +1,12 @@
+@layer tokens.primitives {
+    :root {
+        --white: hsl(0, 100%, 100%);
+        --black: hsl(0, 0%, 0%);
+        --grey-300: hsl(233, 8%, 79%);
+        --grey-200: hsl(0, 0%, 85%);
+        --navy-950: hsl(240, 100%, 5%);
+        --navy-600: hsl(236, 13%, 42%);
+        --gold-400: hsl(35, 77%, 62%);
+        --red-500: hsl(4, 85%, 63%);
+    }
+}

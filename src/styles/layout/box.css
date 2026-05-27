@@ -5,6 +5,11 @@
         padding-inline: calc( 16 / var(--base) * 1rem );
     }
 
+    .box--xs {
+        padding-inline: var(--padding-inline-new-section);
+        padding-block: var(--padding-block-new-section);
+    }
+
     @media (min-width: 48em){
         .box {
             padding-inline: calc( 80 / var(--base) * 1rem );

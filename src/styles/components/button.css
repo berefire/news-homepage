@@ -1,0 +1,15 @@
+@layer components {
+    .button {
+        inline-size: max-content;
+        background-color: var(--bg-button);
+        padding-inline: var(--padding-inline-button);
+        padding-block: var(--padding-block-button);
+
+        color: var(--fc-button);
+        text-transform: uppercase;
+        font-size: var(--fs-button);
+        line-height: var(--lh-button);
+        font-weight: var(--fw-button);
+        letter-spacing: var(--ls-button);
+    }
+}

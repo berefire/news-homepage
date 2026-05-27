@@ -3,11 +3,12 @@
         --base: 16;
 
         --spacing-100: calc( 8 / var(--base) * 1rem );
+        --spacing-200: calc( 16 / var(--base) * 1rem);
         --spacing-300: calc( 24 / var(--base) * 1rem);
         --spacing-400: calc( 32 / var(--base) * 1rem);
         --spacing-500: calc( 40 / var(--base) * 1rem);
         --spacing-800: calc( 64 / var(--base) * 1rem);
         --spacing-1100: calc( 88 / var(--base) * 1rem);
-        
+
     }
 }

@@ -1,0 +1,30 @@
+@layer components {
+    .cover-image {
+        inline-size: 100%;
+        block-size: calc( 300 / var(--base) * 1rem);
+        background-image: url("../../assets/images/image-web-3-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .hero-title {
+        color: var(--fc-hero-title);
+        font-size: var(--fs-hero-title);
+        line-height: var(--lh-hero-title);
+        font-weight: var(--fw-hero-title);
+    }
+
+    .hero-text {
+        color: var(--fc-hero-body);
+        font-size: var(--fs-hero-body);
+        line-height: var(--lh-hero-body);
+        font-weight: var(--fw-hero-body);
+    }
+
+    @media (min-width: 48rem) {
+        .cover-image {
+             background-image: url("../../assets/images/image-web-3-desktop.jpg");
+        }
+    }
+}

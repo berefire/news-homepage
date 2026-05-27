@@ -1,0 +1,12 @@
+@layer tokens.semantics {
+    :root {
+        --bg-primary: var(--white);
+
+        --fc-hero-title: var(--navy-950);
+        --fc-hero-body: var(--navy-600);
+
+        --bg-button: var(--red-500);
+        --fc-button: var(--navy-950);
+        
+    }
+}

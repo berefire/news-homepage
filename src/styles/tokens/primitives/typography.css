@@ -1,0 +1,26 @@
+@layer tokens.primitives {
+    :root {
+        --inter-family: 'Inter', sans-serif;
+
+        --fs-1: calc( 56 / var(--base) * 1rem);
+        --fs-2: calc( 40 / var(--base) * 1rem);
+        --fs-3: calc( 32 / var(--base) * 1rem);
+        --fs-4: calc( 20 / var(--base) * 1rem);
+        --fs-5: calc( 18 / var(--base) * 1rem);
+        --fs-6: calc( 15 / var(--base) * 1rem);
+        --fs-7: calc( 14 / var(--base) * 1rem);
+
+        --lh-1: calc( 56 / var(--base) * 1rem);
+        --lh-2: calc( 40 / var(--base) * 1rem);
+        --lh-3: calc( 32 / var(--base) * 1rem);
+        --lh-4: calc( 24 / var(--base) * 1rem);
+        --lh-5: calc( 26 / var(--base) * 1rem);
+
+        --letter-spacing-7: calc( 4.38 / var(--base) * 1em);
+
+        --fw-regular: 400;
+        --fw-bold: 700;
+        --fw-extrabold: 800;
+
+    }
+}
