@@ -7,6 +7,10 @@
 
         --bg-button: var(--red-500);
         --fc-button: var(--navy-950);
-        
+
+        --bg-news-section: var(--black);
+        --fc-news-title: var(--gold-400);
+        --fc-news-title-article: var(--white);
+        --fc-news-body-article: var(--grey-300);
     }
 }

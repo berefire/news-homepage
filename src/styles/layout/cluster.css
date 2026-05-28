@@ -17,4 +17,11 @@
         flex-direction:column;
         gap: var(--gap-cluster-md);
     }
+
+    .cluster--2xs {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-cluster-2xs);
+
+    }
 }

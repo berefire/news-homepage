@@ -14,5 +14,17 @@
         --lh-button: var(--lh-4);
         --fw-button: var(--fw-bold);
         --ls-button: var(--letter-spacing-7);
+
+        --fs-news-title: var(--fs-3);
+        --lh-news-title: var(--lh-3);
+        --fw-news-title: var(--fw-bold);
+
+        --fs-news-card-title: var(--fs-4);
+        --lh-news-card-title: var(--lh-4);
+        --fw-news-card-title: var(--fw-extrabold);
+
+        --fs-news-card-body: var(--fs-6);
+        --lh-news-card-body: var(--lh-5);
+        --fw-news-card-body: var(--fw-regular);
     }
 }
