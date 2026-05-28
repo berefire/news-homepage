@@ -1,4 +1,10 @@
 @layer layout {
+    .cluster {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap-cluster);
+    }
+    
     .cluster--xs {
         display: flex;
         flex-direction: row;
@@ -6,16 +12,16 @@
         justify-content: space-between;
     }
 
-    .cluster--sm {
-        display: flex;
-        flex-direction:column;
-        gap: var(--gap-cluster-sm);
-    }
-
     .cluster--md {
         display: flex;
         flex-direction:column;
         gap: var(--gap-cluster-md);
+    }
+
+    .cluster--2md {
+        display: flex;
+        flex-direction:column;
+        gap: var(--gap-cluster-2md);
     }
 
     .cluster--2xs {

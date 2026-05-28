@@ -12,5 +12,9 @@
         --fc-news-title: var(--gold-400);
         --fc-news-title-article: var(--white);
         --fc-news-body-article: var(--grey-300);
+
+        --fc-article-number: var(--red-500);
+        --fc-article-title: var(--navy-950);
+        --fc-article-body: var(--navy-600);
     }
 }

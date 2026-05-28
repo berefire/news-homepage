@@ -26,5 +26,23 @@
         --fs-news-card-body: var(--fs-6);
         --lh-news-card-body: var(--lh-5);
         --fw-news-card-body: var(--fw-regular);
+
+        --fs-article-number: var(--fs-3);
+        --lh-article-number: var(--lh-3);
+        --fw-article-number: var(--fw-bold);
+
+        --fs-article-title: var(--fs-5);
+        --lh-article-title: var(--lh-4);
+        --fw-article-title: var(--fw-bold);
+
+        --fs-article-body: var(--fs-6);
+        --lh-article-body: var(--lh-5);
+        --fw-article-body: var(--fw-regular);
+    }
+
+    @media (min-width: 48em){
+        :root {
+            --fs-news-title: var(--fs-2);
+        }
     }
 }
