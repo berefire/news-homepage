@@ -1,0 +1,5 @@
+@layer states {
+    .article-title:hover {
+        color: var(--fc-article-title-hover);
+    }
+}

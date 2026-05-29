@@ -1,0 +1,5 @@
+@layer states {
+    .news-card-title:hover {
+        color: var(--fc-news-title-article-hover);
+    }
+}

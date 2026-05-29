@@ -7,14 +7,18 @@
 
         --bg-button: var(--red-500);
         --fc-button: var(--navy-950);
+        --bg-button-hover: var(--black);
+        --fc-button-hover: var(--white);
 
         --bg-news-section: var(--black);
         --fc-news-title: var(--gold-400);
         --fc-news-title-article: var(--white);
+        --fc-news-title-article-hover: var(--gold-400);
         --fc-news-body-article: var(--grey-300);
 
         --fc-article-number: var(--red-500);
         --fc-article-title: var(--navy-950);
+        --fc-article-title-hover: var(--red-500);
         --fc-article-body: var(--navy-600);
     }
 }

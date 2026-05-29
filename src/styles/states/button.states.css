@@ -1,0 +1,6 @@
+@layer states {
+    .button:hover {
+        background-color: var(--bg-button-hover);
+        color: var(--fc-button-hover);
+    }
+}
