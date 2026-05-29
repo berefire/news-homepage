@@ -1,27 +1,44 @@
 @layer tokens.semantics {
+  :root {
+    --gap-cluster-2md: var(--spacing-400);
+    --gap-cluster-md: var(--spacing-300);
+    --gap-cluster-2xs: var(--spacing-100);
+    --gap-cluster: var(--spacing-300);
+    --gap-grid-xl: var(--spacing-800);
+    --gap-grid-md: var(--spacing-300);
+
+    --gap-article-list: var(--spacing-400);
+
+    --padding-inline-button: var(--spacing-400);
+    --padding-block-button: var(--spacing-100);
+
+    --padding-inline-new-section: var(--spacing-300);
+    --padding-block-new-section: var(--spacing-200);
+
+    --padding-block-article-card: var(--spacing-400);
+  }
+
+  @media (min-width: 48rem) {
     :root {
-        --gap-cluster-2md: var(--spacing-400);
-        --gap-cluster-md: var(--spacing-300);
-        --gap-cluster-2xs: var(--spacing-100);
-        --gap-cluster: var(--spacing-300);
-        --gap-grid-xl: var(--spacing-800);
-        --gap-grid-md: var(--spacing-300);
-
-        --gap-article-list: var(--spacing-400);
-
-        --padding-inline-button: var(--spacing-400);
-        --padding-block-button: var(--spacing-100);
-
-        --padding-inline-new-section: var(--spacing-300);
-        --padding-block-new-section: var(--spacing-200);
-
-        --padding-block-article-card: var(--spacing-400);
+      --padding-inline-new-section: var(--spacing-500);
+      --padding-block-new-section: var(--spacing-400);
     }
+  }
 
-    @media(min-width: 48rem) {
-        :root {
-            --padding-inline-new-section: var(--spacing-500);
-            --padding-block-new-section: var(--spacing-400);
-        }
+  @media (min-width: 90em) {
+    :root {
+      --gap-grid-xl-column: var(--spacing-400);
+      --gap-grid-xl-row: var(--spacing-800);
+
+      --gap-grid-md-row: var(--spacing-300);
+      --gap-grid-md-column: 54px;
+
+      --gap-article-list: var(--spacing-500);
+
+      --padding-inline-new-section: var(--spacing-300);
+      --padding-block-new-section: var(--spacing-200);
+
+      --gap-article-list: 12px;
     }
+  }
 }

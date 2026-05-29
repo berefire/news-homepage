@@ -10,4 +10,25 @@
         grid-template-columns: 1fr;
         gap: var(--gap-grid-md);
     }
+
+    @media (min-width: 90em) {
+        .grid--md {
+           grid-template-columns: 1fr max-content;
+           column-gap: var(--gap-grid-md-column);
+           row-gap: var(--gap-grid-md-row);
+           grid-template-areas:
+                "hero-image hero-image"
+                "hero-title hero-content"; 
+        }
+
+        .grid--xl {
+            grid-template-columns: 1fr max-content;
+            column-gap: var(--gap-grid-xl-column);
+            row-gap: var(--gap-grid-xl-row);
+            grid-template-areas:
+                "hero news-list"
+                "hero news-list"
+                "article-list article-list";
+        }
+    }
 }

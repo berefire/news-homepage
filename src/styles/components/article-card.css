@@ -33,4 +33,14 @@
         line-height: var(--lh-news-card-body);
         font-weight: var(--fw-news-card-body);
     }
+
+    @media (min-width: 90em){
+        .news-section {
+            grid-area: news-list;
+        }
+        
+        .news-card-body {
+            max-inline-size: 33ch;
+        }
+    }
 }

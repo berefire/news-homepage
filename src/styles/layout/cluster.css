@@ -15,6 +15,7 @@
     .cluster--md {
         display: flex;
         flex-direction:column;
+        justify-content: center;
         gap: var(--gap-cluster-md);
     }
 

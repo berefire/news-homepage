@@ -45,4 +45,12 @@
             --fs-news-title: var(--fs-2);
         }
     }
+
+    @media(min-width: 90em){
+        :root {
+            --fs-hero-title: var(--fs-1);
+            --lh-hero-title: var(--lh-1);
+            --fs-news-title: var(--fs-3);
+        }
+    }
 }

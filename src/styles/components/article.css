@@ -1,63 +1,100 @@
 @layer components {
+  .cover-image {
+    inline-size: 100%;
+    block-size: calc(300 / var(--base) * 1rem);
+    background-image: url("../../assets/images/image-web-3-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hero-title {
+    color: var(--fc-hero-title);
+    font-size: var(--fs-hero-title);
+    line-height: var(--lh-hero-title);
+    font-weight: var(--fw-hero-title);
+  }
+
+  .hero-text {
+    color: var(--fc-hero-body);
+    font-size: var(--fs-hero-body);
+    line-height: var(--lh-hero-body);
+    font-weight: var(--fw-hero-body);
+  }
+
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap-article-list);
+  }
+
+  .article-image {
+    inline-size: calc(100 / var(--base) * 1rem);
+    block-size: auto;
+    object-fit: cover;
+  }
+
+  .article-number {
+    color: var(--fc-article-number);
+    font-size: var(--fs-article-number);
+    line-height: var(--lh-article-number);
+    font-weight: var(--fw-article-number);
+  }
+
+  .article-item {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .article-title {
+    color: var(--fc-article-title);
+    font-size: var(--fs-article-title);
+    line-height: var(--lh-article-title);
+    font-weight: var(--fw-article-title);
+  }
+
+  .article-body {
+    color: var(--fc-article-body);
+    font-size: var(--fs-article-body);
+    line-height: var(--lh-article-body);
+    font-weight: var(--fw-article-body);
+  }
+
+  @media (min-width: 48rem) {
     .cover-image {
-        inline-size: 100%;
-        block-size: calc( 300 / var(--base) * 1rem);
-        background-image: url("../../assets/images/image-web-3-mobile.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+      background-image: url("../../assets/images/image-web-3-desktop.jpg");
+    }
+  }
+
+  @media (min-width: 90em) {
+    .hero {
+      grid-area: hero;
+    }
+
+    .cover-image {
+      grid-area: hero-image;
     }
 
     .hero-title {
-        color: var(--fc-hero-title);
-        font-size: var(--fs-hero-title);
-        line-height: var(--lh-hero-title);
-        font-weight: var(--fw-hero-title);
+      grid-area: hero-title;
+      max-inline-size: 8ch;
     }
 
-    .hero-text {
-        color: var(--fc-hero-body);
-        font-size: var(--fs-hero-body);
-        line-height: var(--lh-hero-body);
-        font-weight: var(--fw-hero-body);
+    .hero-content {
+      grid-area: hero-content;
+      max-inline-size: 34ch;
+    }
+
+    .articles-section {
+      grid-area: article-list;
     }
 
     .article-list {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-article-list);
-    }
-
-    .article-image {
-        inline-size: calc( 100 / var(--base) * 1rem);
-        block-size: calc( 127 / var(--base) * 1rem);
-        object-fit: contain;
-    }
-
-    .article-number {
-        color: var(--fc-article-number);
-        font-size: var(--fs-article-number);
-        line-height: var(--lh-article-number);
-        font-weight: var(--fw-article-number);
-    }
-
-    .article-title {
-        color: var(--fc-article-title);
-        font-size: var(--fs-article-title);
-        line-height: var(--lh-article-title);
-        font-weight: var(--fw-article-title);
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .article-body {
-        color: var(--fc-article-body);
-        font-size: var(--fs-article-body);
-        line-height: var(--lh-article-body);
-        font-weight: var(--fw-article-body);
+      max-inline-size: 22ch;
     }
-
-    @media (min-width: 48rem) {
-        .cover-image {
-             background-image: url("../../assets/images/image-web-3-desktop.jpg");
-        }
-    }
+  }
 }
