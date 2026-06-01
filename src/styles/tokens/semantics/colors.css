@@ -2,6 +2,8 @@
     :root {
         --bg-primary: var(--white);
 
+        --bg-menu: var(--white);
+
         --fc-hero-title: var(--navy-950);
         --fc-hero-body: var(--navy-600);
 
@@ -20,5 +22,14 @@
         --fc-article-title: var(--navy-950);
         --fc-article-title-hover: var(--red-500);
         --fc-article-body: var(--navy-600);
+
+        --fc-menu-links: var(--navy-950);
+        --fc-menu-links-hover: var(--red-500);
+    }
+
+    @media(min-width: 64em){
+        :root {
+            --fc-menu-links: var(--navy-600);
+        }
     }
 }

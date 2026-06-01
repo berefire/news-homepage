@@ -7,6 +7,8 @@
     --gap-grid-xl: var(--spacing-800);
     --gap-grid-md: var(--spacing-300);
 
+    --gap-navigation-list: var(--spacing-300);
+
     --gap-article-list: var(--spacing-400);
 
     --padding-inline-button: var(--spacing-400);
@@ -16,17 +18,29 @@
     --padding-block-new-section: var(--spacing-200);
 
     --padding-block-article-card: var(--spacing-400);
+
+    --padding-inline-menu-mobile-start: calc( 21 / var(--base) * 1rem );
+    --padding-inline-menu-mobile-end: calc( 21 / var(--base) * 1rem );
+    --padding-block-menu-mobile: calc( 27 / var(--base) * 1rem );
+
+    --margin-block-start-navigation-list: var(--spacing-1100);
   }
 
   @media (min-width: 48rem) {
     :root {
       --padding-inline-new-section: var(--spacing-500);
       --padding-block-new-section: var(--spacing-400);
+
+      --padding-inline-menu-mobile-start: calc( 36 / var(--base) * 1rem );
+      --padding-inline-menu-mobile-end: calc( 79.59 / var(--base) * 1rem );
+      --padding-block-menu-mobile: calc( 27 / var(--base) * 1rem );
     }
   }
 
-  @media (min-width: 90em) {
-    :root {
+  @media (min-width: 64em) {
+    :root  {
+      --gap-navigation-list: var(--spacing-500);
+
       --gap-grid-xl-column: var(--spacing-400);
       --gap-grid-xl-row: var(--spacing-800);
 
@@ -38,7 +52,7 @@
       --padding-inline-new-section: var(--spacing-300);
       --padding-block-new-section: var(--spacing-200);
 
-      --gap-article-list: 12px;
+      --gap-article-list: calc( 12 / var(--base) * 1rem );
     }
   }
 }

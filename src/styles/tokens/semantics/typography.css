@@ -38,6 +38,10 @@
         --fs-article-body: var(--fs-6);
         --lh-article-body: var(--lh-5);
         --fw-article-body: var(--fw-regular);
+
+        --fs-menu-links: var(--fs-5);
+        --lh-menu-links: var(--lh-4);
+        --fw-menu-links: var(--fw-regular);
     }
 
     @media (min-width: 48em){
@@ -46,11 +50,14 @@
         }
     }
 
-    @media(min-width: 90em){
+    @media (min-width: 64em){
         :root {
             --fs-hero-title: var(--fs-1);
             --lh-hero-title: var(--lh-1);
             --fs-news-title: var(--fs-3);
+
+            --fs-menu-links: var(--fs-6);
+            --lh-menu-links: var(--lh-5);
         }
     }
 }

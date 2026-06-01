@@ -2,5 +2,12 @@
     :root {
         --sizing-icon-inline: var(--sizing-45);
         --sizing-icon-block: var(--sizing-28);
+        --sizing-inline-mobile-menu: var(--sizing-256);
+    }
+
+    @media (min-width: 48em) {
+        :root {
+            --sizing-inline-mobile-menu: var(--sizing-312);
+        }
     }
 }

@@ -1,0 +1,12 @@
+@layer states {
+  .menu-links:hover {
+    color: var(--fc-menu-links-hover);
+  }
+
+  .menu-button:focus-visible,
+  .close-button-menu:focus-visible,
+  .menu-links:focus-visible {
+    outline: 0.187em solid currentColor;
+    outline-offset: 0.25em;
+  }
+}

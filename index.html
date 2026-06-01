@@ -31,19 +31,37 @@
   <div class="cover box cluster--md">
     <header class="header cluster--xs">
       <img src="./src/assets/images/logo.svg" width="65" height="40" alt="News homepage logo" class="logo-news">
-      <nav aria-label="Main navigation">
+      <nav aria-label="Main navigation" class="desktop-navigation">
+        <ul class="navigation-list">
+          <li><a href="#" class="menu-links">Home</a></li>
+          <li><a href="#" class="menu-links">New</a></li>
+          <li><a href="#" class="menu-links">Popular</a></li>
+          <li><a href="#" class="menu-links">Trending</a></li>
+          <li><a href="#" class="menu-links">Categories</a></li>
+        </ul>
+      </nav>
+
+
+      <nav aria-label="Main navigation" class="mobile-navigation">
         <button type="button" class="menu-button" aria-expanded="false" aria-controls="primary-navigation"
           aria-label="Open menu">
           <img src="./src/assets/images/icon-menu.svg" width="40" height="17" alt="" class="menu-icon">
         </button>
 
-        <ul id="primary-navigation" hidden>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
+        <dialog class="mobile-menu" id="mobile-menu">
+          <div class="mobile-menu-content">
+            <button type="button" class="close-button-menu" aria-label="Close menu">
+              <img src="./src/assets/images/icon-menu-close.svg" width="32" height="31" alt="" class="close-icon">
+            </button>
+            <ul id="primary-navigation" class="navigation-list">
+              <li><a href="#" class="menu-links">Home</a></li>
+              <li><a href="#" class="menu-links">New</a></li>
+              <li><a href="#" class="menu-links">Popular</a></li>
+              <li><a href="#" class="menu-links">Trending</a></li>
+              <li><a href="#" class="menu-links">Categories</a></li>
+            </ul>
+          </div>
+        </dialog>
       </nav>
     </header>
     <main class="grid--xl">

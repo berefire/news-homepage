@@ -1,5 +1,10 @@
 @layer states {
-    .article-title:hover {
-        color: var(--fc-article-title-hover);
-    }
+  .article-title:hover {
+    color: var(--fc-article-title-hover);
+  }
+
+  .article-title:focus-visible {
+    outline: 0.187em solid currentColor;
+    outline-offset: 0.25em;
+  }
 }

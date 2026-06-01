@@ -1,5 +1,10 @@
 @layer states {
-    .news-card-title:hover {
-        color: var(--fc-news-title-article-hover);
-    }
+  .news-card-title:hover {
+    color: var(--fc-news-title-article-hover);
+  }     
+  
+  .news-card-title:focus-visible {
+    outline: 0.187em solid currentColor;
+    outline-offset: 0.25em;     
+  }
 }
