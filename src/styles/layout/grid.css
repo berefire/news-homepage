@@ -11,7 +11,7 @@
         gap: var(--gap-grid-md);
     }
 
-    @media (min-width: 90em) {
+    @media (min-width: 64em) {
         .grid--md {
            grid-template-columns: 1fr max-content;
            column-gap: var(--gap-grid-md-column);

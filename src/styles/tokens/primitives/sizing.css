@@ -2,5 +2,7 @@
     :root {
         --sizing-28: calc( 28 / var(--base) * 1rem );
         --sizing-45: calc( 45 / var(--base) * 1rem );
+        --sizing-256: calc( 256 / var(--base) * 1rem );
+        --sizing-312: calc( 312 / var(--base) * 1rem );
     }
 }

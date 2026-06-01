@@ -1,21 +1,44 @@
 @layer base {
-    html {
-        font-family: var(--font-family-base);
-        background-color: var(--bg-primary);
-        -webkit-text-size-adjust: 100%;
-    }
+  html {
+    font-family: var(--font-family-base);
+    background-color: var(--bg-primary);
+    -webkit-text-size-adjust: 100%;
+  }
 
+  html,
+  body {
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  dialog {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    inline-size: 100%;
+    block-size: 100vh;
+
+    max-inline-size: none;
+    max-block-size: none;
+
+    background: transparent;
+
+    overflow: hidden;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin-inline-start: auto;
+  }
+
+  @supports (min-block-size: 100dvh) {
     html,
     body {
-        min-block-size: 100vh;
-        display: flex;
-        flex-direction: column;
+      min-block-size: 100dvh;
     }
-
-    @supports (min-block-size: 100dvh) {
-        html,
-        body {
-            min-block-size: 100dvh;
-        }
-    }
+  }
 }

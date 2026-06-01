@@ -34,7 +34,7 @@
         font-weight: var(--fw-news-card-body);
     }
 
-    @media (min-width: 90em){
+    @media (min-width: 64em){
         .news-section {
             grid-area: news-list;
         }
