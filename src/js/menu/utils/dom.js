@@ -1,4 +1,4 @@
-import { requiredElements } from "../menu/constants.js";
+import { requiredElements } from "../constants.js";
 
 const selectors = {
   menuButton: ".menu-button",
@@ -42,13 +42,10 @@ export function initDOMElements() {
   };
 
   Object.entries(DOM).forEach(([key, element]) => {
-
     const isRequired = requiredElements.includes(key);
 
-    if( isRequired && !assertElement(element) ) {
-      throw new Error(
-        `[DOM] Missing required element: ${key})`
-      );
+    if (isRequired && !assertElement(element)) {
+      throw new Error(`[DOM] Missing required element: ${key})`);
     }
   });
 
