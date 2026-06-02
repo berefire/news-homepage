@@ -41,6 +41,8 @@
     :root  {
       --gap-navigation-list: var(--spacing-500);
 
+      --gap-cluster-md: var(--spacing-800);
+
       --gap-grid-xl-column: var(--spacing-400);
       --gap-grid-xl-row: var(--spacing-800);
 
