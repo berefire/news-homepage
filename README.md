@@ -55,7 +55,7 @@ Users should be able to:
 
 ### 🔗Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/accessible-news-homepage-with-mobile-navigation-yUtmSgkmJk](https://www.frontendmentor.io/solutions/accessible-news-homepage-with-mobile-navigation-yUtmSgkmJk)
 - Live Site URL: [https://berefire.github.io/news-homepage/](https://berefire.github.io/news-homepage/)
 
 ## ⚙️My process
