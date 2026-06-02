@@ -7,6 +7,8 @@
     --gap-grid-xl: var(--spacing-800);
     --gap-grid-md: var(--spacing-300);
 
+    --stack-margin-block-start: var(--spacing-300);
+
     --gap-navigation-list: var(--spacing-300);
 
     --gap-article-list: var(--spacing-400);
@@ -43,11 +45,13 @@
 
       --gap-cluster-md: var(--spacing-800);
 
+      --stack-margin-block-start: var(--spacing-400);
+
       --gap-grid-xl-column: var(--spacing-400);
       --gap-grid-xl-row: var(--spacing-800);
 
       --gap-grid-md-row: var(--spacing-300);
-      --gap-grid-md-column: 54px;
+      --gap-grid-md-column: 3.375rem;
 
       --gap-article-list: var(--spacing-500);
 

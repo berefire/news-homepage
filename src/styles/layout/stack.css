@@ -1,0 +1,7 @@
+@layer layout {
+    .stack {
+        display: flex;
+        flex-direction: column;
+        gap: var(--stack-margin-block-start);
+    }
+}
