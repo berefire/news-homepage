@@ -13,6 +13,7 @@
 
   .mobile-navigation {
     display: block;
+    block-size: 100%;
   }
 
   .desktop-navigation {
@@ -56,12 +57,16 @@
   }
 
   @media (min-width: 64em) {
-    .mobile-navigation {
+    .menu-button {
+      display: none;
+    }
+
+    .mobile-menu {
       display: none;
     }
 
     .desktop-navigation {
-        display: block;
+      display: block;
     }
 
     .navigation-list {

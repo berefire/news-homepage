@@ -42,13 +42,14 @@
       </nav>
 
 
-      <nav aria-label="Mobile navigation" class="mobile-navigation">
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="primary-navigation"
-          aria-label="Open menu">
-          <img src="./src/assets/images/icon-menu.svg" width="40" height="17" alt="" class="menu-icon">
-        </button>
 
-        <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="primary-navigation"
+        aria-label="Open menu">
+        <img src="./src/assets/images/icon-menu.svg" width="40" height="17" alt="" class="menu-icon">
+      </button>
+
+      <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+        <nav aria-label="Mobile navigation" class="mobile-navigation">
           <div class="mobile-menu-content">
             <button type="button" class="close-button-menu" aria-label="Close menu">
               <img src="./src/assets/images/icon-menu-close.svg" width="32" height="31" alt="" class="close-icon">
@@ -62,7 +63,8 @@
               <li><a href="#" class="menu-links">Categories</a></li>
             </ul>
           </div>
-        </dialog>
+        </nav>
+      </dialog>
       </nav>
     </header>
     <main class="grid--xl">
@@ -113,8 +115,7 @@
         <ul class="article-list">
           <li class="article-item">
             <article class="cluster">
-              <img class="article-image" src="./src/assets/images/image-retro-pcs.jpg" width="200" height="254"
-                alt="">
+              <img class="article-image" src="./src/assets/images/image-retro-pcs.jpg" width="200" height="254" alt="">
               <div class="cluster--2xs">
                 <p aria-hidden="true" class="article-number">01</p>
                 <h3><a href="#" class="article-title">Reviving Retro PCs</a></h3>
