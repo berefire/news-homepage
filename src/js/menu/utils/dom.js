@@ -21,6 +21,12 @@ function assertElement(element) {
 }
 
 export function addSafeListener(element, event, handler, context = "unknown") {
+
+  if(!assertElement(element)) {
+    throw new Error(`[${context}] Invalid element passed to addSafeListener`)
+  }
+
+
   const isCollection =
     element instanceof NodeList || element instanceof HTMLCollection;
 
@@ -45,7 +51,7 @@ export function initDOMElements() {
     const isRequired = requiredElements.includes(key);
 
     if (isRequired && !assertElement(element)) {
-      throw new Error(`[DOM] Missing required element: ${key})`);
+      throw new Error(`[DOM] Missing required element: ${key}`);
     }
   });
 

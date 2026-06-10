@@ -25,6 +25,17 @@ export function createMenuController({
     menuButton.setAttribute("aria-expanded", "false");
     document.body.classList.remove("u-no-scroll");
     menu.classList.remove("is-open");
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (prefersReducedMotion) {
+      menu.close();
+      menuButton.focus();
+      return;
+    }
+
     menuContent.addEventListener(
       "transitionend",
       () => {
