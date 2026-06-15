@@ -1,7 +1,7 @@
-export const requiredElements = [
+export const REQUIRED_ELEMENTS = [
     "menuButton",
     "closeButton",
     "menu",
     "menuContent",
-    "firstLink"
+    "mobileNavLinks"
 ];

@@ -1,8 +1,4 @@
 import "@styles/main.css";
+import { initializeMenu } from "./menu/index.js";
 
-import { initDOMElements } from "./menu/utils/dom.js";
-import { initMenu } from "./menu/menu.js";
-
-const DOM = initDOMElements();
-
-initMenu(DOM);
+initializeMenu();
