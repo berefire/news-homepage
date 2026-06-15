@@ -43,8 +43,9 @@ export function createMenuController({
         menu.showModal();
 
         requestAnimationFrame(() => {
-            menuContent.getBoundingClientRect();
+            requestAnimationFrame(() => {
             menu.classList.add("is-open");
+            });
         });
 
         setExpanded(true);
