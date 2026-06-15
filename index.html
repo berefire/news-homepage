@@ -24,8 +24,8 @@
 
   <title>Berefire | Frontend Mentor Accessible News homepage</title>
 
-  <script type="module" crossorigin src="/news-homepage/assets/index-MAIfbmlp.js"></script>
-  <link rel="stylesheet" crossorigin href="/news-homepage/assets/index-CGYtHqix.css">
+  <script type="module" crossorigin src="/news-homepage/assets/index-CjG0gSyf.js"></script>
+  <link rel="stylesheet" crossorigin href="/news-homepage/assets/index-Chko26ZK.css">
 </head>
 
 <body>
@@ -41,32 +41,12 @@
           <li><a href="#" class="menu-links">Categories</a></li>
         </ul>
       </nav>
-
-
-
       <button type="button" class="menu-button" aria-expanded="false" aria-controls="primary-navigation"
         aria-label="Open menu">
         <img src="data:image/svg+xml,%3csvg%20width='40'%20height='17'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='%2300001A'%20fill-rule='evenodd'%3e%3cpath%20d='M0%200h40v3H0zM0%207h40v3H0zM0%2014h40v3H0z'/%3e%3cpath%20d='M0%200h40v3H0z'/%3e%3c/g%3e%3c/svg%3e" width="40" height="17" alt="" class="menu-icon">
       </button>
-
-      <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
-        <nav aria-label="Mobile navigation" class="mobile-navigation">
-          <div class="mobile-menu-content">
-            <button type="button" class="close-button-menu" aria-label="Close menu">
-              <img src="data:image/svg+xml,%3csvg%20width='32'%20height='31'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='%2300001A'%20fill-rule='evenodd'%3e%3cpath%20d='m2.919.297%2028.284%2028.284-2.122%202.122L.797%202.419z'/%3e%3cpath%20d='M.797%2028.581%2029.081.297l2.122%202.122L2.919%2030.703z'/%3e%3c/g%3e%3c/svg%3e" width="32" height="31" alt="" class="close-icon">
-            </button>
-            <h2 id="mobile-menu-title" class="sr-only">Mobile menu</h2>
-            <ul id="primary-navigation" class="navigation-list">
-              <li><a href="#" class="menu-links">Home</a></li>
-              <li><a href="#" class="menu-links">New</a></li>
-              <li><a href="#" class="menu-links">Popular</a></li>
-              <li><a href="#" class="menu-links">Trending</a></li>
-              <li><a href="#" class="menu-links">Categories</a></li>
-            </ul>
-          </div>
-        </nav>
-      </dialog>
     </header>
+
     <main class="grid--xl">
       <article class="grid--md hero">
         <span class="cover-image" aria-hidden="true"></span>
@@ -112,7 +92,8 @@
         <ul class="article-list">
           <li class="article-item">
             <article class="cluster">
-              <img class="article-image" src="/news-homepage/assets/image-retro-pcs-Od5UaNM7.jpg" width="200" height="254" alt="Vintage desktop computers">
+              <img class="article-image" src="/news-homepage/assets/image-retro-pcs-Od5UaNM7.jpg" width="200" height="254"
+                alt="Vintage desktop computers">
               <div class="cluster--2xs">
                 <p aria-hidden="true" class="article-number">01</p>
                 <h3><a href="#" class="article-title">Reviving Retro PCs</a></h3>
@@ -147,6 +128,24 @@
       </section>
     </main>
   </div>
+
+  <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+    <nav aria-label="Mobile navigation" class="mobile-navigation">
+      <div class="mobile-menu-content">
+        <button type="button" class="close-button-menu" aria-label="Close menu">
+          <img src="data:image/svg+xml,%3csvg%20width='32'%20height='31'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='%2300001A'%20fill-rule='evenodd'%3e%3cpath%20d='m2.919.297%2028.284%2028.284-2.122%202.122L.797%202.419z'/%3e%3cpath%20d='M.797%2028.581%2029.081.297l2.122%202.122L2.919%2030.703z'/%3e%3c/g%3e%3c/svg%3e" width="32" height="31" alt="" class="close-icon">
+        </button>
+        <h2 id="mobile-menu-title" class="sr-only">Mobile menu</h2>
+        <ul id="primary-navigation" class="navigation-list">
+          <li><a href="#" class="menu-links">Home</a></li>
+          <li><a href="#" class="menu-links">New</a></li>
+          <li><a href="#" class="menu-links">Popular</a></li>
+          <li><a href="#" class="menu-links">Trending</a></li>
+          <li><a href="#" class="menu-links">Categories</a></li>
+        </ul>
+      </div>
+    </nav>
+  </dialog>
 
   <footer class="attribution">
     Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
