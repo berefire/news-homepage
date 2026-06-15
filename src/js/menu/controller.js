@@ -49,7 +49,7 @@ export function createMenuController({
 
         setExpanded(true);
         lockScroll();
-        //focusFirstLink();
+        focusFirstLink();
     }
 
     function closeMenu(){
