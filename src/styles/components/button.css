@@ -1,5 +1,5 @@
 @layer components {
-    .button {
+    .hero-button {
         inline-size: max-content;
         background-color: var(--bg-button);
         padding-inline: var(--padding-inline-button);
@@ -12,4 +12,4 @@
         font-weight: var(--fw-button);
         letter-spacing: var(--ls-button);
     }
-}
+}   

@@ -7,10 +7,12 @@ export function createMenuController({
   firstLink,
 }) {
   let isClosing = false;
-  let closeTimeoutId = null;
 
   function setExpanded(expanded) {
-    menuButton.setAttribute("aria-expanded", String(expanded));
+    menuButton.setAttribute(
+      "aria-expanded",
+      String(expanded)
+    );
   }
 
   function lockScroll() {
@@ -35,43 +37,33 @@ export function createMenuController({
     }
 
     menu.close();
+
     restoreFocus();
+
     isClosing = false;
-    closeTimeoutId = null;
   }
 
   function openMenu() {
-    if (isClosing) {
-      return;
-    }
-
-    if (closeTimeoutId) {
-      clearTimeout(closeTimeoutId);
-      closeTimeoutId = null;
-    }
-
-    if (menu.open) {
+    if (menu.open || isClosing) {
       return;
     }
 
     menu.showModal();
-
+    
     requestAnimationFrame(() => {
-      menu.classList.add("is-open");
-
-      menuContent.addEventListener(
-        "transitionend",
-        () => {
-          if (menu.open) {
-            focusFirstLink();
-          }
-        },
-        { once: true },
-      );
+      menu.getBoundingClientRect();
+      menu.classList.add("animate");
     });
 
     setExpanded(true);
+
     lockScroll();
+
+    setTimeout(() => {
+      if (menu.open) {
+        focusFirstLink();
+      }
+    }, 350);
   }
 
   function closeMenu() {
@@ -82,28 +74,39 @@ export function createMenuController({
     isClosing = true;
 
     setExpanded(false);
+
     unlockScroll();
-    menu.classList.remove("is-open");
+
+    menu.classList.remove("animate");
 
     if (prefersReducedMotion()) {
       finishClose();
       return;
     }
 
-    closeTimeoutId = setTimeout(finishClose, 200);
+    const handleTransitionEnd = (event) => {
+      if (event.target !== menuContent) {
+        return;
+      }
+
+      menuContent.removeEventListener(
+        "transitionend",
+        handleTransitionEnd
+      );
+
+      finishClose();
+    };
 
     menuContent.addEventListener(
       "transitionend",
-      () => {
-        clearTimeout(closeTimeoutId);
-        finishClose();
-      },
-      { once: true },
+      handleTransitionEnd
     );
   }
 
   function toggleMenu() {
-    menu.open ? closeMenu() : openMenu();
+    menu.open
+      ? closeMenu()
+      : openMenu();
   }
 
   return {

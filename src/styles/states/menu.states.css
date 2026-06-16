@@ -3,10 +3,27 @@
     color: var(--fc-menu-links-hover);
   }
 
+  .close-button-menu:hover {
+    color: var(--bg-close-icon-hover);
+  }
+
+  .logo-button:hover {
+    color: var(--bg-site-logo-hover);
+  }
+
+  .menu-button:hover {
+    color: var(--bg-menu-mobile-hover);
+  }
+
+  .logo-button:focus-visible,
   .menu-button:focus-visible,
-  .close-button-menu:focus-visible,
-  .menu-links:focus-visible {
+  .mobile-navigation .navigation-list a:focus-visible {
     outline: 0.187em solid currentColor;
     outline-offset: 0.25em;
+  }
+
+  .close-button-menu:focus-visible {
+    outline: 0.187em solid currentColor;
+    outline-offset: 0.5em;
   }
 }

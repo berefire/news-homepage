@@ -1,11 +1,11 @@
 import { REQUIRED_ELEMENTS } from "./constants.js";
 
-const selectors = {
+const SELECTORS = {
   menuButton: ".menu-button",
   closeButton: ".close-button-menu",
   menu: ".mobile-menu",
   menuContent: ".mobile-menu-content",
-  mobileNavLinks: ".mobile-navigation .menu-links",
+  mobileNavLinks: ".mobile-navigation .navigation-list .menu-links",
 };
 
 function isCollection(value){
@@ -52,11 +52,11 @@ export function addSafeEventListener(element, event, handler, context = "unknown
 
 function initDOMElements() {
   const DOM = {
-    menuButton: document.querySelector(selectors.menuButton),
-    closeButton: document.querySelector(selectors.closeButton),
-    menu: document.querySelector(selectors.menu),
-    menuContent: document.querySelector(selectors.menuContent),
-    mobileNavLinks: document.querySelectorAll(selectors.mobileNavLinks),
+    menuButton: document.querySelector(SELECTORS.menuButton),
+    closeButton: document.querySelector(SELECTORS.closeButton),
+    menu: document.querySelector(SELECTORS.menu),
+    menuContent: document.querySelector(SELECTORS.menuContent),
+    mobileNavLinks: document.querySelectorAll(SELECTORS.mobileNavLinks),
   };
 
   Object.entries(DOM).forEach(([key, element]) => {

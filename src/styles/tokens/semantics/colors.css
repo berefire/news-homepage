@@ -25,6 +25,15 @@
 
         --fc-menu-links: var(--navy-950);
         --fc-menu-links-hover: var(--red-500);
+
+        --bg-site-logo: var(--navy-950);
+        --bg-site-logo-hover: var(--red-500);
+
+        --bg-close-icon: var(--navy-950);
+        --bg-close-icon-hover: var(--red-500);
+
+        --bg-menu-mobile: var(--navy-970);
+        --bg-menu-mobile-hover: var(--red-500);
     }
 
     @media(min-width: 64em){

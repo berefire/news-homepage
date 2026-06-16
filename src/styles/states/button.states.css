@@ -1,11 +1,15 @@
 @layer states {
-    .button:hover {
+    .hero-button:hover {
         background-color: var(--bg-button-hover);
         color: var(--fc-button-hover);
     }
 
-    .button:focus-visible {
-        outline: 0.187em solid currentColor;
+    .hero-button:focus-visible {
+        outline: 0.187em solid var(--bg-button);
         outline-offset: 0.25em;
     }
-}
+
+    .hero-button:focus-visible:hover {
+        outline-color: var(--bg-button-hover);
+    }
+}       
