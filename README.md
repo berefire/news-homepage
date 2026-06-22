@@ -170,9 +170,8 @@ The collaboration was especially helpful for accessibility validation and refini
 
 ## 👤Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
 
 ---
 
